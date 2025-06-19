@@ -34,9 +34,12 @@ export default function QuantityButton({ title, price, image }: { title: string;
           onClick={addToCart}
           className="flex items-center justify-center gap-2 w-36 h-10 bg-white text-sm rounded-full border py-2 group hover:bg-[#c73a0f] hover:text-white transition-colors duration-200"
         >
-          <div className="group-hover:invert group-hover:brightness-0 transition">
-            <Image src="/images/icon-add-to-cart.svg" alt="cart" width={18} height={18} className="object-contain align-middle" />
-          </div>
+          <Image
+            src="/images/icon-add-to-cart.svg"
+            alt="cart"
+            width={18}
+            height={18}
+            className="object-contain align-middle group-hover:invert group-hover:brightness-0 transition" />
           Add to cart
         </button>
       ) : (
