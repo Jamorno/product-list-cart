@@ -50,7 +50,7 @@ export default function MenuItem({ imageMobile, imageDesktop, imageThumbnail, al
 
       <div className={`${redHat.className} pt-6`}>
         <p className="text-xs text-gray-400">{typeDessert}</p>
-        <h3 className="text-sm font-semibold py-1">{title}</h3>
+        <h1 className="text-sm font-semibold py-1">{title}</h1>
         <p className="text-sm font-semibold text-[#c73a0f]">${price}</p>
       </div>
     </div>

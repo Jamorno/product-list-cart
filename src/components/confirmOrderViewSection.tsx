@@ -53,11 +53,14 @@ export default function ConfirmOrderViewSection({ onClose }: { onClose: () => vo
         ))}
         <div className="flex justify-between items-center py-3">
           <p className="text-sm font-semibold tex-[#87635a] lg:text-xs lg:font-normal">Order Total</p>
-          <h3 className="text-2xl font-bold lg:text-lg">${totalPrice}</h3>
+          <h2 className="text-2xl font-bold lg:text-lg">${totalPrice}</h2>
         </div>
       </div>
 
-      <button onClick={clearAndStartNewOrder} className="bg-[#c73a0f] text-white rounded-full py-3 w-full hover:bg-[#772309]">
+      <button
+        type="button"
+        onClick={clearAndStartNewOrder}
+        className="bg-[#c73a0f] text-white rounded-full py-3 w-full hover:bg-[#772309]">
         Start New Oreder
       </button>
     </div>

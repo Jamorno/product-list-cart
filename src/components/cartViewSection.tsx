@@ -14,9 +14,9 @@ export default function CartViewSection() {
 
   return (
     <div className="bg-white rounded-xl p-6 self-start">
-      <h2 className="text-2xl font-bold text-[#c73a0f] pb-4">
+      <h1 className="text-2xl font-bold text-[#c73a0f] pb-4">
         Your Cart({totalItem})
-      </h2>
+      </h1>
 
       {totalItem == 0 ? (
         <div className="text-center mt-6">
@@ -40,7 +40,9 @@ export default function CartViewSection() {
                   </div>
                 </div>
 
-                <button onClick={() => removeItem(item.title)}
+                <button
+                  type="button"
+                  onClick={() => removeItem(item.title)}
                   className="flex items-center justify-center text-[#c9aea6] font-bold self-center rounded-full w-5 h-5 border-2 hover:text-[#c73a0f]">
                   x
                 </button>
@@ -50,7 +52,7 @@ export default function CartViewSection() {
           <div className="mt-6">
             <div className="flex justify-between items-center">
               <p className="text-sm font-semibold tex-[#87635a]">Order Total</p>
-              <h3 className="text-2xl font-bold">${totalPrice}</h3>
+              <h2 className="text-2xl font-bold">${totalPrice}</h2>
             </div>
 
             <div className="bg-[#f4edeb] rounded-xl text-center flex justify-center items-center gap-2 p-3 my-6">
@@ -59,7 +61,9 @@ export default function CartViewSection() {
               <span className="text-xs">This is a<strong>carbon-neutral</strong>delivery</span>
             </div>
 
-            <button onClick={() => setComfirmOrder(true)}
+            <button
+              type="button"
+              onClick={() => setComfirmOrder(true)}
               className="bg-[#c73a0f] text-white rounded-full py-3 w-full hover:bg-[#772309]">
               Confirm Order
             </button>

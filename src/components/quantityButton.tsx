@@ -30,6 +30,7 @@ export default function QuantityButton({ title, price, image }: { title: string;
     <div>
       {quantity === 0 ? (
         <button
+          type="button"
           onClick={addToCart}
           className="flex items-center justify-center gap-2 w-36 h-10 bg-white text-sm rounded-full border py-2 group hover:bg-[#c73a0f] hover:text-white transition-colors duration-200"
         >
@@ -41,6 +42,7 @@ export default function QuantityButton({ title, price, image }: { title: string;
       ) : (
         <div className="flex items-center justify-between bg-[#c73a0f] text-white p-2 rounded-full w-36 h-10">
           <button
+            type="button"
             onClick={decreaseToCart}
             className="w-4 h-4 border rounded-full flex items-center justify-center hover:bg-white hover:text-[#c73a0f]"
           >
@@ -50,6 +52,7 @@ export default function QuantityButton({ title, price, image }: { title: string;
           <span className="text-sm font-semibold">{quantity}</span>
 
           <button
+            type="button"
             onClick={increaseTocart}
             className="w-4 h-4 border rounded-full flex items-center justify-center hover:bg-white hover:text-[#c73a0f]"
           >
